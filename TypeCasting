@@ -1,0 +1,97 @@
+package assignment1;
+
+public class TypeCasting {
+	public static void main(String[] args) {
+		//Automatic Type casting take place when,
+		//1. the two types are compatible
+		//2. the target type is larger than the source type
+		//if not explicit type conversion must be done
+		System.out.println("From byte to others");
+		System.out.println("-----------------------------");
+		byte b=127;
+		System.out.println("Byte value is "+b);
+		int i=b;//auto casting
+		System.out.println("This is byte to int "+i+" (Auto casting)");
+		float f=b;//byte to float
+		System.out.println("This is byte to float "+f+" (Auto casting)");
+		short s=b;
+		System.out.println("This is byte to Short"+s+" (Auto casting)");
+		long l=b;
+		System.out.println("This is byte to long"+l+" (Auto casting)");
+		double d=b;
+		System.out.println("This is byte to long"+d+" (Auto casting)");
+		System.out.println("\n\nFrom short to others");
+		System.out.println("-----------------------------");
+		short s1=5000;
+		System.out.println("Short value is "+s1);
+		byte b1=(byte)s1;
+		System.out.println("This is short to byte "+b1+" (Explicit conversion)");
+		int i1=s1;
+		System.out.println("This is short to int "+i1+" (Auto casting)");
+		long l1=s1;
+		System.out.println("This is short to long "+l1+" (Auto casting)");
+		float f1=s1;
+		System.out.println("This is short to float "+f1+" (Auto casting)");
+		double d1=s1;
+		System.out.println("This is short to double "+d1+" (Auto casting)");
+		char c1=(char)s1;
+		System.out.println("This is short to char "+c1+" (Explicit Casting)");
+		System.out.println("\n\nFrom int to others");
+		System.out.println("-----------------------------");
+		int i2=500000000;
+		System.out.println("Integer value is "+i2);
+		byte b2=(byte)i2;
+		System.out.println("This is int to byte "+b2+" (Explicit conversion)");
+		short s2=(short)i2;
+		System.out.println("This is int to short "+s2+" (Explicit casting)");
+		long l2=i2;
+		System.out.println("This is int to long "+l2+" (Auto casting)");
+		float f2=b2;
+		System.out.println("This is int to float "+f2+" (Auto casting)");
+		double d2=i2;
+		System.out.println("This is int to double "+d2+" (Auto casting)");
+		System.out.println("\n\nFrom float to others");
+		System.out.println("-----------------------------");
+		float f3=534561234532342345658679.1231234567833f;
+		System.out.println("Float value is "+f3);
+		byte b3=(byte)f3;
+		System.out.println("This is short to byte "+b3+" Explicit conversion ");
+		int i3=(int)f3;
+		System.out.println("This is short to int "+i3+" Explicit ");
+		long l3=(long)f3;
+		System.out.println("This is short to long "+l3+" Explicit Conversion");
+		double d3=f3;
+		System.out.println("This is short to double "+d3+" Auto casting");
+		short s3=(short)f3;
+		System.out.println("This is float to short "+s3+" Explicit conversion");
+		System.out.println("\n\nFrom long to others");
+		System.out.println("-----------------------------");
+		long l4=1234567213;
+		byte b4=(byte)l4;
+		System.out.println("This is long to byte "+b4+" Explicit conversion");
+		int i4=(int)l4;
+		System.out.println("This is long to int "+i4+" Explicit conversion");
+		float f4=l4;
+		System.out.println("This is long to float "+f4+" Explicit conversion");
+		double d4=l4;
+		System.out.println("This is long to double "+d4+" (Auto casting)");
+		short s4=(short)l4;
+		System.out.println("This is long to short "+s4+" explicit sonversion");
+		System.out.println("\n\nFrom double to others");
+		System.out.println("-----------------------------");
+		double d5=1234456806574665798712398.879546412376796879465921;
+		System.out.println("Double value is "+d5);
+		byte b5=(byte)d5;
+		System.out.println("This is double to byte "+b5+" explicit conversion ");
+		short s5=(short)d5;
+		System.out.println("This is double to short "+s5+" explicit conversion ");
+		int i5=(int)d5;
+		System.out.println("This is double to int "+i5+" explicit conversion ");
+		float f5=(float)d5;
+		System.out.println("This is double to float "+f5+" explicit conversion");
+		long l5=(long)d5;
+		System.out.println("This is double to long "+l5+" explicit conversion");
+		
+		
+	}
+}
