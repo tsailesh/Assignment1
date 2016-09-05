@@ -1,0 +1,42 @@
+package assignment1;
+
+public class BoxingUnboxing {
+	public static void main(String[] args) {
+		System.out.println("--------------------Boxing--------------------\n");
+  //Converting primitive data types into object is called boxing
+  //while using a wrapper class we just need to pass the value of the primitive data type to the constructor of the Wrapper class.
+		Byte b=12;
+		System.out.println("Byte Auto Boxing "+b);
+		Integer i=1234567890;
+		System.out.println("Integer Auto Boxing "+i);
+		Short s=12345;
+		System.out.println("Short Auto Boxing "+s);
+		Float f=123451233434123987568987644457890875412.1234312312379866875574599800932343457685996f;
+		System.out.println("Float Auto Boxing "+f);
+		Double d=1234567891235998765467890987543223456789012345678.11234567909876432234567902345678987654;
+		System.out.println("Double Auto Boxing "+d);
+		Long l=122345678901234568L;
+		System.out.println("Long Auto Boxing "+l);
+		System.out.println("\n--------------------Un-Boxing--------------------");
+  //Wrapper object can be converted back to a primitive data type, and this process is called un-boxing
+		Byte b1=new Byte((byte)127);
+		byte b2=b1;
+		System.out.println("Byte Auto Un Boxing "+b2);
+		Short s1=new Short((short) 1234567890);
+		short s2=s1;
+		System.out.println("Short Auto Un Boxing "+s2);
+		Integer i1=new Integer(1234568763);
+		int i2=i1;
+		System.out.println("Integer Auto Un Boxing "+i2);
+		Float f1=new Float(129.567);
+		float f2=f1;
+		System.out.println("Float Auto Un Boxing "+f2);
+		Long l1=new Long(1234567899);
+		long l2=l1;
+		System.out.println("Long Auto Un Boxing"+l2);
+		Double d1=new Double(123.12345);
+		double d2=d1;
+		System.out.println("Double Auto Un Boxing "+d2);
+
+	}
+}
