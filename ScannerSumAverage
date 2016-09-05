@@ -1,0 +1,39 @@
+package assignment1;
+
+import java.util.Scanner;
+
+public class ScannerSumAverage {
+	public static void main(String[] args) {
+		/*Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter first value");
+		int a=scanner.nextInt();
+		System.out.println("Enter second value ");
+		int b=scanner.nextInt();
+		System.out.println("Enter third value ");
+		int c=scanner.nextInt();
+		int sum=0;
+		sum=a+b+c;
+		double ave=0;
+		ave=sum/3;
+		System.out.println(sum+" "+ave);*/
+		
+		Scanner scanner=new Scanner(System.in);
+		int sum=0;
+		float ave=0f;
+		System.out.println("How many no ? ");
+		int no=scanner.nextInt();
+		int[] nos=new int[no];
+		for (int i=0;i<no;i++){
+			System.out.print("Enter "+(i+1)+" no : ");
+			nos[i]=scanner.nextInt();
+			System.out.println("You Entered "+(i+1)+" no is "+nos[i]);
+			
+			sum=sum+nos[i];
+			ave=(float)sum/nos.length;
+		}		
+		System.out.println("\n----------  CALCULATION  ----------\n");
+		System.out.println("Sum is : "+sum);
+		System.out.println("Average is :"+ave);
+		System.out.println("\n-----------------------------------");
+	}
+}
